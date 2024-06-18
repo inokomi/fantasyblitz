@@ -298,7 +298,7 @@ int main () {
 	Fluffy.setBossAlive(true);
     
     //LOGO
-    draft.open("logoscreen.txt");	
+    draft.open("screens/logoscreen.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -628,7 +628,7 @@ void WarriorAttack (Warrior P1, DarkMage P4, Thief P2, LightMage P3, Eff d10, Bo
 		if (Fluffy.getBossAlive() == false) {
 			system("cls");
 			std :: cout << "YOU WIN" << "\n" << "\n";
-			draft.open("credits.txt");	
+			draft.open("screens/credits.txt");	
         	std :: string design;
 		
          	while(!draft.eof())
@@ -701,7 +701,7 @@ void ThiefAttack (Thief P2, DarkMage P4, Warrior P1, LightMage P3, Eff d10, Boss
 		if (Fluffy.getBossAlive() == false) {
 			system("cls");
 			std :: cout << "YOU WIN" << "\n" << "\n";
-			draft.open("credits.txt");	
+			draft.open("screens/credits.txt");	
         	std :: string design;
 		
          	while(!draft.eof())
@@ -962,7 +962,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	if (P1.GetWarAlive() == true && P2.GetThAlive() == true && P3.GetLMAlive() == true && P4.GetDMAlive() == true){
     
 	
-	draft.open("complete.txt");	
+	draft.open("screens/complete.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -974,7 +974,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	}
 	//WAARRIOR DEAD
 	else if (P1.GetWarAlive() == false && P2.GetThAlive() == true && P3.GetLMAlive() == true && P4.GetDMAlive() == true){
-    draft.open("warrior_dead.txt");	
+    draft.open("screens/warrior_dead.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -986,7 +986,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	}
 	//ALL MAGES ALIVE
 	if (P1.GetWarAlive() == false && P2.GetThAlive() == false && P3.GetLMAlive() == true && P4.GetDMAlive() == true){
-    draft.open("thief_warrior_dead.txt");	
+    draft.open("screens/thief_warrior_dead.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -998,7 +998,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	}
 	//THIEF DEAD
 	if (P1.GetWarAlive() == true && P2.GetThAlive() == false && P3.GetLMAlive() == true && P4.GetDMAlive() == true){
-    draft.open("thief_dead.txt");	
+    draft.open("screens/thief_dead.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -1010,7 +1010,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	}
 	//LIGHTMAGE DEAD
 	if (P1.GetWarAlive() == true && P2.GetThAlive() == true && P3.GetLMAlive() == false && P4.GetDMAlive() == true){
-    draft.open("lightmage_dead.txt");	
+    draft.open("screens/lightmage_dead.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -1022,7 +1022,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	}
 	//DARKMAGE DEAD
 	if (P1.GetWarAlive() == true && P2.GetThAlive() == true && P3.GetLMAlive() == true && P4.GetDMAlive() == false){
-    draft.open("darkmage_dead.txt");	
+    draft.open("screens/darkmage_dead.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -1034,7 +1034,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	}
 	//ALL MAGES DEAD
 	if (P1.GetWarAlive() == true && P2.GetThAlive() == true && P3.GetLMAlive() == false && P4.GetDMAlive() == false){
-    draft.open("darkmage_lightmage_dead.txt");	
+    draft.open("screens/darkmage_lightmage_dead.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -1046,7 +1046,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	}
 	//ONLY WAARRIOR ALIVE
 	if (P1.GetWarAlive() == true && P2.GetThAlive() == false && P3.GetLMAlive() == false && P4.GetDMAlive() == false){
-    draft.open("darkmage_lightmage_thief_dead.txt");	
+    draft.open("screens/darkmage_lightmage_thief_dead.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -1058,7 +1058,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	}
 	//ONLY THIEF ALIVE
 	if (P1.GetWarAlive() == false && P2.GetThAlive() == true && P3.GetLMAlive() == false && P4.GetDMAlive() == false){
-    draft.open("darkmage_lightmage_warrior_dead.txt");	
+    draft.open("screens/darkmage_lightmage_warrior_dead.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -1070,7 +1070,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	}
 	//ONLY LIGHTMAGE ALIVE
 	if (P1.GetWarAlive() == false && P2.GetThAlive() == false && P3.GetLMAlive() == true && P4.GetDMAlive() == false){
-    draft.open("darkmage_thief_warrior_dead.txt");	
+    draft.open("screens/darkmage_thief_warrior_dead.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -1082,7 +1082,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	}
 	//ONLY DARKMAGE ALIVE
 	if (P1.GetWarAlive() == false && P2.GetThAlive() == false && P3.GetLMAlive() == false && P4.GetDMAlive() == true){
-    draft.open("lightmage_thief_warrior_deaddarkmage_left.txt");	
+    draft.open("screens/lightmage_thief_warrior_deaddarkmage_left.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -1094,7 +1094,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	}
 	//THIEF AND DARKMAGE DEAD
 	if (P1.GetWarAlive() == true && P2.GetThAlive() == false && P3.GetLMAlive() == true && P4.GetDMAlive() == false){
-    draft.open("darkmage_thief_dead.txt");	
+    draft.open("screens/darkmage_thief_dead.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -1106,7 +1106,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	}
 	//DARKMAGE AND WARRIOR DEAD
 	if (P1.GetWarAlive() == false && P2.GetThAlive() == true && P3.GetLMAlive() == true && P4.GetDMAlive() == false){
-    draft.open("darkmage_warrior_dead.txt");	
+    draft.open("screens/darkmage_warrior_dead.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -1118,7 +1118,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	}
 	//THIEF AND LIGHTMAGE DEAD
 	if (P1.GetWarAlive() == true && P2.GetThAlive() == false && P3.GetLMAlive() == false && P4.GetDMAlive() == true){
-    draft.open("lightmage_thief_dead.txt");	
+    draft.open("screens/lightmage_thief_dead.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -1130,7 +1130,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	}
 	//WARRIOR AAND LIGHTMAGE DEAD
 	if (P1.GetWarAlive() == false && P2.GetThAlive() == true && P3.GetLMAlive() == false && P4.GetDMAlive() == true){
-    draft.open("lightmage_warrior_dead.txt");	
+    draft.open("screens/lightmage_warrior_dead.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
@@ -1142,7 +1142,7 @@ void BATTLESTATUS (Warrior P1, Thief P2, LightMage P3, DarkMage P4) {
 	}
 	//ALL DEAD
 	if (P1.GetWarAlive() == false && P2.GetThAlive() == false && P3.GetLMAlive() == false && P4.GetDMAlive() == false){
-    draft.open("everyone_dead.txt");	
+    draft.open("screens/everyone_dead.txt");	
 	std :: string design;
 		
 	while(!draft.eof())
